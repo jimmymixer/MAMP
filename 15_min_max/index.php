@@ -16,13 +16,21 @@
     <?php
 
       $sample = array(135, 2.4, 2.67, 1.23, 332, 2, 1.02);
-      $min = 0;
-      $max = 0;
-      for ($i=0; $i < count($sample); $i++) {
+      $min = $sample[0];
+      $max = $sample[0];
+      for ($i = 1; $i < count($sample); $i++) {
         if ($sample[$i] < $min) {
           $min = $sample[$i];
-          echo "Min: " . $min;
+          echo "Min: " . $min . "<br>";
         }
+      }
+      echo "<hr>";
+      for ($i = 1; $i < count($sample); $i++) {
+        if ($sample[$i] > $max) {
+          $max = $sample[$i];
+          echo "Max: " . $max;
+        }
+        echo "<br>";
       }
 
     ?>

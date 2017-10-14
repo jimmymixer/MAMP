@@ -1,4 +1,6 @@
 <?php
+  echo "<br><hr><br>";
+
 //   NOTE: Average Demo
 
   function print_average($array){
@@ -15,9 +17,12 @@
   $numbers = array(22, 44, 55, 66, 77);
   print_average($numbers);
 
-  ?>
 
-  <?php
+  echo "<br><hr><br>";
+
+?>
+
+<?php
 
   function total_average($array){
     $total_num_of_val = count($array);
@@ -26,7 +31,7 @@
       $cur_total = $cur_total + $value;
     }
     $new_avg = $cur_total / $total_num_of_val;
-    // echo "This is the second average:  " . $new_avg . "<br>";
+    echo "This is the second average:  " . $new_avg . "<br>";
     return $new_avg;
   }
   $random_array = array(34,2,666,88,56);

@@ -1,3 +1,11 @@
+
+How to go to localhost:8888
+~start up MAMP
+~in the web address type localhost:8888
+~the add in the web address the / folder name / file name
+
+
+
 <?php
 
   // Create an ARRAY
