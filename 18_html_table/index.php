@@ -21,33 +21,33 @@
           array('first_name' => 'KB', 'last_name' => 'Tonel')
         );
       ?>
-
-      <table style="width:100%">
-        <tr>
-          <th>User #</th>
-          <th>First Name</th>
-          <th>Last Name</th>
-          <th>Full Name</th>
-          <th>Full Name UPPERCASE</th>
-          <th>Full Length of Name (without spaces)</th>
-        </tr>
-        <?php
-          for ($i = 0; $i < count($users); $i++) {
-            echo "<tr>";
-              echo "<td>" . $i . "</td>";
-              echo "<td>" . $users[$i]['first_name'] . "</td>";
-              echo "<td>" . $users[$i]['last_name'] . "</td>";
-              echo "<td>" . $users[$i]['first_name'] . " " . $users[$i]['last_name'] . "</td>";
-              echo "<td>" . strtoupper($users[$i]['first_name']) . " " . strtoupper($users[$i]['last_name']) . "</td>";
-              $f_name_count = strlen($first_name);
-              $l_name_count = strlen($last_name);
-              $total = $f_name_count + $l_name_count;
-              echo "<td>" . $total . "</td>";
-              echo "<td>" . strlen($users[$i]['first_name']) . strlen($users[$i]['last_name']) . "</td>";
-            echo "</tr>";
-          }
-        ?>
-      </table>
+      <div class="container">
+        <table style="width:100%">
+          <tr>
+            <th>User #</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Full Name</th>
+            <th>Full Name UPPERCASE</th>
+            <th>Full Length of Name (without spaces)</th>
+          </tr>
+          <?php
+            for ($i = 0; $i < count($users); $i++) {
+              echo "<tr>";
+                echo "<td>" . $i . "</td>";
+                echo "<td>" . $users[$i]['first_name'] . "</td>";
+                echo "<td>" . $users[$i]['last_name'] . "</td>";
+                echo "<td>" . $users[$i]['first_name'] . " " . $users[$i]['last_name'] . "</td>";
+                echo "<td>" . strtoupper($users[$i]['first_name']) . " " . strtoupper($users[$i]['last_name']) . "</td>";
+                $f_name_count = strlen($users[$i]['first_name']);
+                $l_name_count = strlen($users[$i]['last_name']);
+                $total = $f_name_count + $l_name_count;
+                echo "<td>" . $total . "</td>";
+              echo "</tr>";
+            }
+          ?>
+        </table>
+      </div>
 
     </div>
 

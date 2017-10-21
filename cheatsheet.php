@@ -4,6 +4,18 @@ How to go to localhost:8888
 ~in the web address type localhost:8888
 ~the add in the web address the / folder name / file name
 
+// ----------- CSS ---------------------------------- //
+ in the index.php html file include in the heading
+  <link rel="stylesheet" href="style.css.php">
+  <?php include 'header.php'; ?>
+  <style>
+    <?php include 'CSS/main.css'; ?>
+  </style>
+ in the style.css.php file include at the top
+  <?php
+   header('Content-type: text/css');
+  ?>
+// ----------- /CSS --------------------------------- //
 
 
 <?php
