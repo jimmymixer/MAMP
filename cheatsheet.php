@@ -1,3 +1,18 @@
+// ----------- SESSION START () PROBLEM -------------- //
+<!-- FIND PHP.INI -->
+Open finder window.
+Left column click on your harddrive.
+Find the level where you see Applications, Incompatible Software, Library, ...
+To show hidden files click: command-shift-. (period)
+Click on folder etc
+Click on file php.ini.default
+  <!-- Changing the Search session.cache_limiter  -->
+  Step one :- Search & Open PHI.INI.DEFAULT
+  Step Two:- Search session.cache_limiter
+  Step three:- put " public " in front of session.cache_limiter
+  Like this... : session.cache_limiter =public
+
+// ----------- LOCAL HOST --------------------------- //
 
 How to go to localhost:8888
 ~start up MAMP
